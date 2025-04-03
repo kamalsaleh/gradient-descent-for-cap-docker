@@ -1,1 +1,1 @@
-# Docker image for [MachineLearningForCAP](https://github.com/homalg-project/MachineLearningForCAP)
+# Docker image for [GradientDescentForCAP](https://github.com/homalg-project/GradientDescentForCAP)

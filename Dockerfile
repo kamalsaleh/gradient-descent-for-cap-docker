@@ -30,9 +30,9 @@ RUN cd /home/gap/.gap/pkg/ \
     && git clone --depth 1 -vv https://github.com/homalg-project/homalg_project.git \
     && git clone --depth 1 -vv https://github.com/homalg-project/CAP_project.git \
     && git clone --depth 1 -vv https://github.com/homalg-project/CategoricalTowers.git \
-    && git clone --depth 1 -vv https://github.com/homalg-project/MachineLearningForCAP.git \
-    && cp ./MachineLearningForCAP/dev/ci_gaprc /home/gap/.gap/gaprc \
+    && git clone --depth 1 -vv https://github.com/homalg-project/GradientDescentForCAP.git \
+    && cp ./GradientDescentForCAP/dev/ci_gaprc /home/gap/.gap/gaprc \
     && if [ -d "CAP_project/CAP" ]; then make -C "CAP_project/CAP" doc; fi \
     && if [ -d "CAP_project/MonoidalCategories" ]; then make -C "CAP_project/MonoidalCategories" doc; fi \
     && if [ -d "CAP_project/CartesianCategories" ]; then make -C "CAP_project/CartesianCategories" doc; fi \
-    && if [ -d "MachineLearningForCAP" ]; then make -C "MachineLearningForCAP" doc; fi
+    && if [ -d "GradientDescentForCAP" ]; then make -C "GradientDescentForCAP" doc; fi
